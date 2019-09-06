@@ -1,0 +1,66 @@
+GIT
+git init: para iniciar un proyecto nuevo, crear la carpeta .git dentro del proyecto
+
+git status: sirve para ver el estado de nuestros archivos y que archivo no se esta haciendo segimiento
+
+git add nombrearchivo o nombre carpeta   sirve para agregar un archivo al staging area
+git add .               agrega todo
+
+_________________________________________________________________________________
+para hacer un commit(pasar los archivos de working directory estaging area). se debe configurar primero para que el sistema sepa quien esta haciendo los cambios.
+COMANDOS PARA CONFIGURAR:
+1. git config --global user.email "diegoesc8712@hotmail.com": correo del usuario que esta haciendo cambios
+
+2. git config --global user.name"DiegoE"
+ya que esta configurado podemos hacer commit
+
+1. git commit: para crear punto de control del codigo
+2. digita la descripción y finaliza con esc
+3. digita    :wq
+
+
+de esta manera ya los archivos fueron cambiados y se crear un id para cada archivo
+
+git log: sirve para ver todos los commit que se han echo
+________________________________________________________________________________________
+CONTROLAR CAMBIOS:
+SI SE HACEN CAMBIOS EN ALGUN ARCHIVO AL HACER GIT STATUS NOS MOSTRARA LOS ARCHIVOS QUE HAN CAMBIADO
+
+git checkout -- index.html(nombre del archivo)    para revertir los cambios de los archivos 
+
+git diff index.html(nombre del archivo)             para visualizar las diferencias y cambios que se hicieron en el archivo
+                                                    con - mustra lo que se ha quitado
+                                                    con + muestra lo que se ha colocado
+
+git add index.htm(nombre del archivo)               para guardar el archivo modificado
+
+git commit para guardar los cambio y guardar los cambios en el estaging area. se debe colocar el mensaje con los cambios realizados
+git commit -m"mensaje descripción"          de esta manera tambien se puede hacer el commit
+
+_________________________________________________________________________________
+MANEJO DE RAMAS
+
+git branch                  muestra las ramas del proyecto
+git branch nombrerama       crea una nueva rama
+git checkout nombrerama     para ir a la rama que deseo
+
+para guardar los cambios en otra rama debemos ir a la rama que deseamos que tenga los cambios con git checkout nombrerama
+
+
+________________________________________________________________________________________
+Para llever el codigo al repositorio de git-hub
+
+1. crear el repositorio en git-hub
+2. git remote add origin https://github.com/Diegoesc8712/cursoNodeJs.git    esta linea se muestra despues de crear el repositorio, copiar y pegar en la terminal
+3. git push -u origin master
+
+
+________________________________________________________________________________________
+PARA CLONAR UN PROYECTO
+
+git clone https://github.com/Diegoesc8712/cursoNodeJs.git
+
+
+_________________________________________________________________________________
+https://www.youtube.com/watch?v=HiXLkL42tMU
+

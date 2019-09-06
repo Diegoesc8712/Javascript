@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Aprendiendo Jquery</title>
+    <!-- <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous">
+    </script> -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/01.selectores.js"></script>
+    <style>
+        .zebra{
+            border: 5px dashed black;
+        }
+        .grande{
+            font-size: 30px;
+        }   
+        .margen-superior{
+            display: block;
+            margin-top: 45px;
+            
+        }     
+        .resaltado{
+            border-bottom: 2px solid green
+        }
+    </style>
+    
+
+    <script>
+        $(document).ready(function(){
+            console.log("Jquery cargado")            
+        });
+    </script>
+</head>
+<body>
+    <h1>APRENDIENDO JQUERY</h1>
+    <ul>
+        <li><a href="https://google.com" title="Google">Ir a google</a></li>
+        <li><a href="https://facebook.com" title="Facebook">Ir a facebook</a></li>
+       
+    </ul>
+    
+    <P id="parrafo" class="zebra">Ejercicios de Jquery</P>
+
+    <div id="caja">
+        <p>Hola caja</p>
+        <ul>
+            <li>Elemento 1</li>
+            <li class="resaltado">Elemento 2</li>
+        </ul>
+        <span class="resaltado"> soy un span </span>
+    </div>
+</body>
+</html>

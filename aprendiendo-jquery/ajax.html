@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>JQuery</title>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/05-ajax.js"></script>
+    <style>
+        #datos{
+            width: 250px;
+            height: 250px;
+            border: 2px solid green;
+            overflow: scroll;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>mas metodos de JQuery - ajax</h1>
+    <form action="https://reqres.in/api/users" method="POST" id="formulario">
+        Nombre: <input type="text" name="name">
+        Web: <input type="text" name="web">
+        <input type="submit" value="Registrar">
+    </form>
+    <br>
+    <div id="datos">
+
+    </div>
+</body>
+</html>
